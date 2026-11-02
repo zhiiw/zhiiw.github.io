@@ -1,4 +1,4 @@
-const LETTER_UNLOCK_AT=Date.parse('2026-11-02T00:00:00+08:00');
+const LETTER_UNLOCK_AT=Date.parse('2026-11-03T00:00:00+08:00');
 function isLetterUnlocked(now) { return now>=LETTER_UNLOCK_AT; }
 function letterCountdown(now){
  const seconds=Math.max(0,Math.ceil((LETTER_UNLOCK_AT-now)/1000));
